@@ -1,0 +1,81 @@
+1. 3
+2. 4
+3. 3
+4. 1
+5. 2
+6. 2
+7. 3
+8. 2
+9. 2
+10. 1
+11. 1
+12. 2
+13. 1,2,3
+14. 2,4
+15. 2
+16.
+#include <stdio.h>
+
+int main()
+{
+	int x;
+	int y;
+	int prod;
+	scanf("%d", &x);
+	scanf("%d", &y);
+	prod = x * y;
+	printf("곱셈의 결과 = %d", prod);
+	return ;
+}
+17.
+#define CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+#define PI 3.14
+
+int main()
+{
+	int radius;
+	double area;
+	
+	printf("반지름을 입력하시오: ");
+	scanf("%d", &radius);
+	
+	area = PI * radius * radius;
+	
+	printf("원의 명적: %lf\n", area);
+	
+	return 0;
+}
+18.
+#define CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int x, y, sum;
+	
+	printf("x와 y를 입력하시오 >> ");
+	scanf("%d %d", &x, &y);
+	
+	sum = x + y;
+	printf("두 수의 합: %d\n", sum);
+	
+	return 0;
+}
+19.
+#define CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	double x, y, sum;
+	
+	printf("x와 y를 입력하시오 >> ");
+	scanf("%d %d", &x, &y);
+	
+	sum = x + y;
+	printf("두 수의 합: %lf\n", sum);
+	
+	return 0;
+}
