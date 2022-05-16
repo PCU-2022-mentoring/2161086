@@ -1,0 +1,132 @@
+         <1번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main (void)
+{
+      int n1, n2;
+
+      printf(" 수식 >> ");
+      scanf_s(" %d%d, &n1, &n2);
+
+   switch(?)
+   {
+   case '+' :
+      printf("%d", n1+n2);
+      break;
+   case '-' :
+      printf("%d", n1-n2);
+      break;
+   case '*'
+      printf("%d", n1*n2);
+      break;
+   case '%' :
+      printf("%d", n1%n2);
+      break;
+   case '/' :
+      printf("%d", n1/n2);
+      break;
+   default :
+      printf("지원하지 않는 연산자 입니다.");
+   }
+   return 0;
+}
+
+
+      
+
+
+         <2번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main (void)
+{
+      int score;
+      printf("점수 >> ");
+      scanf_s("%d", &score);
+
+   if(score < 100)
+      printf(" 다시 입력하세요 ");
+   else if (score >= 90)
+      printf(" A\n " );
+   else if (score >= 80)
+      printf(" B\n ");
+   else if (score >= 70)
+      printf(" C\n ");
+   else if (score >= 50)
+      printf(" D\n ");
+   else
+      printf(" F\n ");
+
+   return 0;
+}
+
+      <3번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (void)
+{
+   int i;
+   srand(time(NULL));
+   for ( i = 1; i <= 10; i++)
+      printf("%d ", (rand() % 100) + 1);
+}
+
+
+      <4번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main (void)
+{
+   int i = 0, j = 0;
+
+   for ( i = 0; i < 5; i++)
+   {
+      for ( j = 0; j <= i; j++)
+         printf("%*");
+      printf("\n");
+   }
+   return 0;
+}
+
+
+      <5번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void) 
+{ 
+   int a; 
+   int b; 
+   int c; 
+   for (a = 0; a < 5; a++) 
+   { 
+      for (b=a; b <= 5-1; b++) { 
+         printf(" "); 
+      } 
+      for (c = 0; c <=(a*2); c++) { 
+         printf("%d"); 
+      } 
+      printf("\n"); 
+   } 
+   return 0; 
+}
+
+      <6번>
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main (void)
+{
+   int x;

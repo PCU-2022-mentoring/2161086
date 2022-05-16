@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+  int n;
+  while(1){
+    scanf("%d", &n);
+    if(n > 100) printf("다시 입력하세요");
+    else if (n >= 90) printf("A \n");
+    else if (n >= 80) printf("B \n");
+    else if (n >= 70) printf("C \n");
+    else if (n >= 50) printf("D \n");
+    else if (n >= 0) printf("F \n");
+    else break;
+  }
+  
+  return 0;
+}

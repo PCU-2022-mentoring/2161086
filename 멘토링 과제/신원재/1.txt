@@ -1,0 +1,42 @@
+1. 
+#include <stdio.h>
+int main(){
+  int n1, n2, i;
+  char a;
+  for(i = 0; i < 10; i++){
+      printf("수식 >> ");
+      scanf("%d %c %d", &n1, &a, &n2);
+      switch(a){
+        case '+':
+            printf("%d \n", n1 + n2);
+            break;
+        case '-':
+            printf("%d \n", n1 - n2);
+            break;
+        case '*':
+            printf("%d \n", n1 * n2);
+            break;
+        case '%':
+          if(n1==0 || n2==0){
+              printf("0으로 나눌 수 없습니다.");
+              break;
+            } 
+            else printf("%d \n", n1 % n2);
+            break;\
+        case '/':
+            if(n1==0 || n2==0){
+              printf("0으로 나눌 수 없습니다.");
+              break;
+            } 
+            else printf("%lf \n", double(n1/n2));
+            break;
+        default:
+            printf("지원하지 않는 연산자 입니다.");
+            break;
+        
+      }
+  }
+
+
+  return 0;
+}
